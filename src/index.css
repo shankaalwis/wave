@@ -18,10 +18,10 @@
     --card-foreground: 224 20% 12%;
 
     /* Brand Colors */
-    --primary: 234 89% 74%;
-    --primary-dark: 234 89% 64%;
+    --primary: 224 76% 5%;
+    --primary-dark: 224 76% 7%;
     --primary-foreground: 220 15% 97%;
-    --primary-glow: 234 89% 84%;
+    --primary-glow: 224 76% 20%;
 
     /* Interactive Elements */
     --secondary: 220 15% 92%;
@@ -39,16 +39,16 @@
     /* Borders & Inputs */
     --border: 220 20% 88%;
     --input: 220 20% 91%;
-    --ring: 234 89% 74%;
+    --ring: 224 76% 5%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(234 89% 74%) 0%, hsl(274 70% 68%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(224 76% 12%) 0%, hsl(274 70% 68%) 100%);
     --gradient-subtle: linear-gradient(135deg, hsl(220 15% 98%) 0%, hsl(220 20% 94%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(234 89% 74% / 0.1) 0%, hsl(274 70% 68% / 0.1) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(224 76% 12% / 0.3) 0%, hsl(274 70% 68% / 0.15) 100%);
 
     /* Shadows & Effects */
     --shadow-glass: 0 8px 32px hsl(224 20% 12% / 0.1);
-    --shadow-glow: 0 0 40px hsl(234 89% 74% / 0.3);
+    --shadow-glow: 0 0 40px hsl(224 76% 20% / 0.35);
     --shadow-card: 0 4px 20px hsl(224 20% 12% / 0.08);
 
     /* Animation Variables */
@@ -73,10 +73,10 @@
     --card-foreground: 220 15% 96%;
 
     /* Brand Colors */
-    --primary: 234 89% 74%;
-    --primary-dark: 234 89% 64%;
-    --primary-foreground: 224 25% 8%;
-    --primary-glow: 234 89% 84%;
+    --primary: 224 76% 5%;
+    --primary-dark: 224 76% 7%;
+    --primary-foreground: 220 15% 96%;
+    --primary-glow: 224 76% 20%;
 
     /* Interactive Elements */
     --secondary: 224 22% 18%;
@@ -94,16 +94,16 @@
     /* Borders & Inputs */
     --border: 220 15% 22%;
     --input: 220 15% 18%;
-    --ring: 234 89% 74%;
+    --ring: 224 76% 5%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(234 89% 74%) 0%, hsl(274 70% 68%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(224 76% 12%) 0%, hsl(274 70% 68%) 100%);
     --gradient-subtle: linear-gradient(135deg, hsl(224 25% 12%) 0%, hsl(224 22% 18%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(234 89% 74% / 0.15) 0%, hsl(274 70% 68% / 0.15) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(224 76% 12% / 0.35) 0%, hsl(274 70% 68% / 0.2) 100%);
 
     /* Shadows & Effects */
     --shadow-glass: 0 8px 32px hsl(224 25% 4% / 0.4);
-    --shadow-glow: 0 0 40px hsl(234 89% 74% / 0.4);
+    --shadow-glow: 0 0 40px hsl(224 76% 20% / 0.45);
     --shadow-card: 0 4px 20px hsl(224 25% 4% / 0.3);
   }
 }
