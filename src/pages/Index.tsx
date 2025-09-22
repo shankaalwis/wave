@@ -14,7 +14,7 @@ import {
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { SocialLink } from "@/components/SocialLink";
-import { ContactButton } from "@/components/ContactButton";
+
 import profileAvatar from "@/assets/profile-avatar.jpg";
 
 const Index = () => {
@@ -111,7 +111,13 @@ const Index = () => {
 
           {/* Primary CTA */}
           <div className="mb-12">
-            <ContactButton href="mailto:me@example.com" label="Get In Touch" />
+            <a
+              href="mailto:me@example.com"
+              className="btn-primary px-8 py-4 rounded-[var(--radius)] font-medium text-lg inline-flex items-center gap-3 hover-tilt"
+            >
+              <Mail className="w-5 h-5" />
+              Get In Touch
+            </a>
           </div>
         </section>
 

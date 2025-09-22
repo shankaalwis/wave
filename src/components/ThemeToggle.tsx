@@ -5,11 +5,10 @@ export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check for saved theme preference or default to system preference
+    // Check for saved theme preference or default to light (cybersecurity theme)
     const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    const shouldBeDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark);
+    const shouldBeDark = savedTheme === 'dark';
     setIsDark(shouldBeDark);
     
     // Apply theme
