@@ -2,24 +2,27 @@ import { Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const ThemeToggle = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Initialize with system preference or saved preference
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        return savedTheme === 'dark';
+      }
+      // Default to dark theme for cybersecurity aesthetic
+      return true;
+    }
+    return true;
+  });
 
   useEffect(() => {
-    // Check for saved theme preference or default to light (cybersecurity theme)
-    const savedTheme = localStorage.getItem('theme');
-    
-    const shouldBeDark = savedTheme === 'dark';
-    setIsDark(shouldBeDark);
-    
-    // Apply theme
-    document.documentElement.classList.toggle('dark', shouldBeDark);
-  }, []);
+    // Apply the theme on mount
+    document.documentElement.classList.toggle('dark', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
 
   const toggleTheme = () => {
-    const newTheme = !isDark;
-    setIsDark(newTheme);
-    localStorage.setItem('theme', newTheme ? 'dark' : 'light');
-    document.documentElement.classList.toggle('dark', newTheme);
+    setIsDark(!isDark);
   };
 
   return (
