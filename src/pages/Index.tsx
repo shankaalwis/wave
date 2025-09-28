@@ -15,54 +15,54 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { ParticleBackground } from "@/components/ParticleBackground";
 import { SocialLink } from "@/components/SocialLink";
 
-import profileAvatar from "@/assets/profile-avatar.jpg";
+import profileAvatar from "@/assets/profile v2.png";
 
 const Index = () => {
   const socialLinks = [
     {
-      href: "mailto:me@example.com",
+      href: "mailto:hello@shankaalwis.dev",
       icon: Mail,
       label: "Email",
-      copyValue: "me@example.com",
+      copyValue: "hello@shankaalwis.dev",
     },
     {
-      href: "tel:+1234567890",
+      href: "tel:+94715333531",
       icon: Phone,
       label: "Phone",
-      copyValue: "+1 (234) 567-890",
+      copyValue: "+94 (71) 533-3531",
     },
     {
-      href: "https://linkedin.com/in/USERNAME",
+      href: "https://linkedin.com/shankaalwis",
       icon: Linkedin,
       label: "LinkedIn",
     },
     {
-      href: "https://instagram.com/USERNAME",
+      href: "https://instagram.com/shankaalwis",
       icon: Instagram,
       label: "Instagram",
     },
     {
-      href: "https://x.com/USERNAME",
+      href: "https://x.com/shankaalwis",
       icon: Twitter,
       label: "X/Twitter",
     },
     {
-      href: "https://facebook.com/USERNAME",
+      href: "https://facebook.com/shankaalwis",
       icon: Facebook,
       label: "Facebook",
     },
     {
-      href: "https://youtube.com/@USERNAME",
+      href: "https://youtube.com/@shankaalwis",
       icon: Youtube,
       label: "YouTube",
     },
     {
-      href: "https://github.com/USERNAME",
+      href: "https://github.com/shankaalwis",
       icon: Github,
       label: "GitHub",
     },
     {
-      href: "https://example.com",
+      href: "https://shankaalwis.dev",
       icon: ExternalLink,
       label: "Portfolio/Website",
     },
@@ -98,26 +98,15 @@ const Index = () => {
           {/* Name and tagline */}
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 fade-in-up delay-1">
-              Your Name
+              Shanka Alwis
             </h1>
             <p className="text-xl md:text-2xl text-foreground-muted mb-6 fade-in-up delay-2">
-              Digital Creator & Problem Solver
+              Technologist
             </p>
             <p className="text-lg text-foreground-muted max-w-2xl mx-auto leading-relaxed fade-in-up delay-2">
-              Passionate about creating digital experiences that make a difference. 
+              Passionate about creating technological experiences that make a difference. 
               Always learning, always building.
             </p>
-          </div>
-
-          {/* Primary CTA */}
-          <div className="mb-12">
-            <a
-              href="mailto:me@example.com"
-              className="btn-primary px-8 py-4 rounded-[var(--radius)] font-medium text-lg inline-flex items-center gap-3 hover-tilt"
-            >
-              <Mail className="w-5 h-5" />
-              Get In Touch
-            </a>
           </div>
         </section>
 
@@ -146,15 +135,15 @@ const Index = () => {
             {/* Location */}
             <div className="card-glass p-6 hover-tilt fade-in-up delay-4">
               <MapPin className="w-6 h-6 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-foreground mb-2">Location</h3>
-              <p className="text-foreground-muted">San Francisco, CA</p>
+              <h3 className="font-semibold text-foreground mb-2">Colombo</h3>
+              <p className="text-foreground-muted">Sri Lanka, LK  </p>
             </div>
 
             {/* Timezone */}
             <div className="card-glass p-6 hover-tilt fade-in-up delay-4">
               <Clock className="w-6 h-6 text-primary mx-auto mb-3" />
               <h3 className="font-semibold text-foreground mb-2">Timezone</h3>
-              <p className="text-foreground-muted">PST (UTC-8)</p>
+              <p className="text-foreground-muted">UTC/GMT +5:30</p>
             </div>
           </div>
         </section>
@@ -171,9 +160,7 @@ const Index = () => {
             <a
               href="mailto:me@example.com?subject=Let's work together"
               className="btn-glass px-6 py-3 rounded-[var(--radius)] font-medium inline-flex items-center gap-2"
-            >
-              <Mail className="w-4 h-4" />
-              Start a conversation
+           >
             </a>
           </div>
         </section>
@@ -181,7 +168,7 @@ const Index = () => {
         {/* Footer */}
         <footer className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-foreground-muted text-sm fade-in-up delay-4">
-            © {new Date().getFullYear()} Your Name. Built with ❤️ using modern web technologies.
+            © {new Date().getFullYear()} Shanka Alwis
           </p>
         </footer>
       </main>
