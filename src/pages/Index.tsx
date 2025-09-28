@@ -80,52 +80,53 @@ const Index = () => {
       </div>
 
       {/* Main content */}
-      <main className="relative z-10 container mx-auto px-6 py-12 min-h-screen flex flex-col justify-center">
-        {/* Hero section */}
-        <section className="text-center mb-16">
-          {/* Profile avatar */}
-          <div className="mb-8 fade-in-up">
-            <div className="relative inline-block">
-              <img
-                src={profileAvatar}
-                alt="Profile photo"
-                className="w-32 h-32 rounded-full mx-auto card-glass p-1 hover-tilt"
-              />
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 animate-pulse-glow" />
+      <main className="relative z-10 container mx-auto px-6 py-12 min-h-screen flex flex-col justify-center text-left items-start">
+        {/* Hero and social */}
+        <section className="mb-16 w-full">
+          <div className="flex flex-col-reverse gap-12 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(20rem,26rem)] lg:items-stretch">
+            <div className="flex flex-col gap-12 lg:justify-between">
+              <div className="max-w-2xl pt-8 sm:pt-12">
+                <h1 className="text-5xl md:text-6xl font-bold text-heading mb-3 fade-in-up delay-1">
+                  SHANKA ALWIS
+                </h1>
+                <p className="text-xl md:text-2xl text-foreground-muted mb-6 fade-in-up delay-2">
+                  Technologist
+                </p>
+                <p className="text-lg text-foreground-muted max-w-2xl leading-relaxed fade-in-up delay-2">
+                  Passionate about creating technological experiences that make a difference.
+                  {' '}Always learning, always building.
+                </p>
+              </div>
+              <div>
+                <h2 className="text-2xl font-semibold text-heading mb-8 fade-in-up delay-3">
+                  Connect with me
+                </h2>
+                <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-4 max-w-4xl">
+                  {socialLinks.map((link, index) => (
+                    <SocialLink
+                      key={link.label}
+                      href={link.href}
+                      icon={link.icon}
+                      label={link.label}
+                      copyValue={link.copyValue}
+                      delay={0.4 + index * 0.1}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-
-          {/* Name and tagline */}
-          <div className="max-w-2xl mx-auto">
-            <h1 className="text-heading md:text-6xl font-bold text-foreground mb-3 fade-in-up delay-1">
-              SHANKA ALWIS
-            </h1>
-            <p className="text-xl md:text-2xl text-foreground-muted mb-6 fade-in-up delay-2">
-              Technologist
-            </p>
-            <p className="text-lg text-foreground-muted max-w-2xl mx-auto leading-relaxed fade-in-up delay-2">
-              Passionate about creating technological experiences that make a difference. 
-              Always learning, always building.
-            </p>
-          </div>
-        </section>
-
-        {/* Social links grid */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-center mb-8 text-heading fade-in-up delay-3">
-            Connect with me
-          </h2>
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-4 max-w-4xl mx-auto">
-            {socialLinks.map((link, index) => (
-              <SocialLink
-                key={link.label}
-                href={link.href}
-                icon={link.icon}
-                label={link.label}
-                copyValue={link.copyValue}
-                delay={0.4 + index * 0.1}
-              />
-            ))}
+            <div className="order-first flex justify-center items-center lg:order-last lg:justify-end lg:items-stretch lg:h-full fade-in-up">
+              <div className="relative inline-flex aspect-square w-40 sm:w-56 lg:h-full lg:w-auto lg:min-h-[24rem] mx-auto">
+                <div className="card-glass p-1 rounded-full w-full h-full hover-tilt">
+                  <img
+                    src={profileAvatar}
+                    alt="Profile photo"
+                    className="w-full h-full rounded-full object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-20 animate-pulse-glow" />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -148,27 +149,10 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Work with me CTA */}
-        <section className="text-center mt-16">
-          <div className="card-glass p-8 max-w-lg mx-auto hover-tilt fade-in-up delay-4">
-            <h3 className="text-2xl font-semibold text-heading mb-4">
-              Ready to work together?
-            </h3>
-            <p className="text-foreground-muted mb-6">
-              I'm always open to discussing new opportunities and exciting projects.
-            </p>
-            <a
-              href="mailto:me@example.com?subject=Let's work together"
-              className="btn-glass px-6 py-3 rounded-[var(--radius)] font-medium inline-flex items-center gap-2"
-           >
-            </a>
-          </div>
-        </section>
-
         {/* Footer */}
         <footer className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-foreground-muted text-sm fade-in-up delay-4">
-            © {new Date().getFullYear()} Shanka Alwis
+            &copy; {new Date().getFullYear()} Shanka Alwis
           </p>
         </footer>
       </main>
