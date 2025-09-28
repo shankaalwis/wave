@@ -33,13 +33,13 @@ export const SocialLink = ({ href, icon: Icon, label, copyValue, delay = 0 }: So
         onClick={handleClick}
         target={copyValue ? undefined : "_blank"}
         rel={copyValue ? undefined : "noopener noreferrer"}
-        className={`card-glass p-4 hover-tilt icon-hover flex items-center justify-center group fade-in-up ${
+        className={`card-glass p-3 sm:p-4 hover-tilt icon-hover flex items-center justify-center group fade-in-up ${
           showCopied ? 'copy-success' : ''
         }`}
         style={{ animationDelay: `${delay}s` }}
         aria-label={copyValue ? `Copy ${label}` : `Open ${label} in new tab`}
       >
-        <Icon className="w-6 h-6 text-icon group-hover:text-primary transition-colors duration-300" />
+        <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-icon group-hover:text-primary transition-colors duration-300" />
       </a>
       
       {showCopied && (
