@@ -96,9 +96,9 @@ const Index = () => {
           </div>
 
           {/* Name and tagline */}
-          <div className="mb-8">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4 fade-in-up delay-1">
-              Shanka Alwis
+          <div className="max-w-2xl mx-auto">
+            <h1 className="text-heading md:text-6xl font-bold text-foreground mb-3 fade-in-up delay-1">
+              SHANKA ALWIS
             </h1>
             <p className="text-xl md:text-2xl text-foreground-muted mb-6 fade-in-up delay-2">
               Technologist
