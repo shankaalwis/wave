@@ -112,7 +112,7 @@ const Index = () => {
 
         {/* Social links grid */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-center mb-8 text-foreground fade-in-up delay-3">
+          <h2 className="text-2xl font-semibold text-center mb-8 text-heading fade-in-up delay-3">
             Connect with me
           </h2>
           <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-4 max-w-4xl mx-auto">
@@ -135,14 +135,14 @@ const Index = () => {
             {/* Location */}
             <div className="card-glass p-6 hover-tilt fade-in-up delay-4">
               <MapPin className="w-6 h-6 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-foreground mb-2">Colombo</h3>
+              <h3 className="font-semibold text-heading mb-2">Colombo</h3>
               <p className="text-foreground-muted">Sri Lanka, LK  </p>
             </div>
 
             {/* Timezone */}
             <div className="card-glass p-6 hover-tilt fade-in-up delay-4">
               <Clock className="w-6 h-6 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-foreground mb-2">Timezone</h3>
+              <h3 className="font-semibold text-heading mb-2">Timezone</h3>
               <p className="text-foreground-muted">UTC/GMT +5:30</p>
             </div>
           </div>
@@ -151,7 +151,7 @@ const Index = () => {
         {/* Work with me CTA */}
         <section className="text-center mt-16">
           <div className="card-glass p-8 max-w-lg mx-auto hover-tilt fade-in-up delay-4">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">
+            <h3 className="text-2xl font-semibold text-heading mb-4">
               Ready to work together?
             </h3>
             <p className="text-foreground-muted mb-6">

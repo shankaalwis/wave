@@ -39,7 +39,7 @@ export const SocialLink = ({ href, icon: Icon, label, copyValue, delay = 0 }: So
         style={{ animationDelay: `${delay}s` }}
         aria-label={copyValue ? `Copy ${label}` : `Open ${label} in new tab`}
       >
-        <Icon className="w-6 h-6 text-foreground group-hover:text-primary transition-colors duration-300" />
+        <Icon className="w-6 h-6 text-icon group-hover:text-primary transition-colors duration-300" />
       </a>
       
       {showCopied && (

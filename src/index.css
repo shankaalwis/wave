@@ -5,51 +5,51 @@
 /* Modern Digital Business Card Design System */
 @layer base {
   :root {
-    /* Light Theme - Cybersecurity Dark */
-    --background: 220 30% 8%;
-    --background-secondary: 220 25% 12%;
-    --foreground: 0 0% 95%;
-    --foreground-muted: 215 15% 70%;
+    /* Light Theme - Clean Blue */
+    --background: 0 0% 100%;
+    --background-secondary: 230 60% 97%;
+    --foreground: 0 0% 10%;
+    --foreground-muted: 0 0% 45%;
 
     /* Glassmorphism & Cards */
-    --glass-background: 220 25% 15%;
-    --glass-border: 235 85% 65%;
-    --card: 220 25% 12%;
-    --card-foreground: 0 0% 95%;
+    --glass-background: 230 60% 99%;
+    --glass-border: 240 58% 55%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
     /* Brand Colors */
-    --primary: 235 85% 65%;
-    --primary-dark: 235 85% 55%;
+    --primary: 240 58% 35%;
+    --primary-dark: 240 58% 28%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 235 85% 75%;
+    --primary-glow: 240 58% 45%;
 
     /* Interactive Elements */
-    --secondary: 220 25% 15%;
-    --secondary-foreground: 0 0% 95%;
-    --accent: 260 75% 55%;
+    --secondary: 230 45% 94%;
+    --secondary-foreground: 0 0% 15%;
+    --accent: 210 80% 45%;
     --accent-foreground: 0 0% 100%;
-    --accent-glow: 260 75% 65%;
+    --accent-glow: 210 80% 60%;
 
     /* Status Colors */
     --success: 142 76% 45%;
     --warning: 38 92% 55%;
-    --destructive: 0 84% 60%;
+    --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 220 25% 18%;
-    --input: 220 25% 15%;
-    --ring: 235 85% 65%;
+    --border: 230 30% 86%;
+    --input: 230 30% 92%;
+    --ring: 240 58% 45%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(235 85% 65%) 0%, hsl(260 75% 55%) 100%);
-    --gradient-subtle: linear-gradient(135deg, hsl(220 25% 15%) 0%, hsl(220 25% 18%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(235 85% 65% / 0.3) 0%, hsl(260 75% 55% / 0.15) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(240 58% 35%) 0%, hsl(240 58% 45%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(230 45% 96%) 0%, hsl(230 45% 92%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(240 58% 35% / 0.15) 0%, hsl(210 80% 45% / 0.2) 100%);
 
     /* Shadows & Effects */
-    --shadow-glass: 0 8px 32px hsl(235 85% 65% / 0.2);
-    --shadow-glow: 0 0 40px hsl(235 85% 65% / 0.4);
-    --shadow-card: 0 4px 20px hsl(235 85% 65% / 0.1);
+    --shadow-glass: 0 12px 30px hsl(240 58% 35% / 0.12);
+    --shadow-glow: 0 0 40px hsl(240 58% 45% / 0.3);
+    --shadow-card: 0 12px 24px hsl(230 45% 20% / 0.08);
 
     /* Animation Variables */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,33 +57,35 @@
 
     --radius: 16px;
 
+    /* Role-specific Colors */
+    --heading: 240 58% 35%;
+    --icon: 240 58% 35%;
   }
-
   .dark {
-    /* Dark Theme - Lighter Cybersecurity */
-    --background: 0 0% 5%;
-    --background-secondary: 220 15% 8%;
-    --foreground: 0 0% 98%;
-    --foreground-muted: 215 15% 75%;
+    /* Dark Theme - Deep Blue */
+    --background: 240 58% 35%;
+    --background-secondary: 240 58% 28%;
+    --foreground: 0 0% 95%;
+    --foreground-muted: 0 0% 80%;
 
     /* Glassmorphism & Cards */
-    --glass-background: 220 15% 8%;
-    --glass-border: 235 90% 70%;
-    --card: 220 15% 8%;
-    --card-foreground: 0 0% 98%;
+    --glass-background: 240 58% 28%;
+    --glass-border: 210 80% 70%;
+    --card: 240 58% 30%;
+    --card-foreground: 0 0% 96%;
 
     /* Brand Colors */
-    --primary: 235 90% 70%;
-    --primary-dark: 235 90% 60%;
-    --primary-foreground: 0 0% 5%;
-    --primary-glow: 235 90% 80%;
+    --primary: 210 80% 70%;
+    --primary-dark: 210 80% 60%;
+    --primary-foreground: 0 0% 10%;
+    --primary-glow: 210 80% 75%;
 
     /* Interactive Elements */
-    --secondary: 220 15% 10%;
-    --secondary-foreground: 0 0% 98%;
-    --accent: 260 80% 60%;
-    --accent-foreground: 0 0% 5%;
-    --accent-glow: 260 80% 70%;
+    --secondary: 240 50% 26%;
+    --secondary-foreground: 0 0% 95%;
+    --accent: 200 85% 65%;
+    --accent-foreground: 240 58% 20%;
+    --accent-glow: 200 85% 70%;
 
     /* Status Colors */
     --success: 142 76% 50%;
@@ -92,19 +94,23 @@
     --destructive-foreground: 0 0% 98%;
 
     /* Borders & Inputs */
-    --border: 220 15% 12%;
-    --input: 220 15% 10%;
-    --ring: 235 90% 70%;
+    --border: 240 45% 50%;
+    --input: 240 40% 32%;
+    --ring: 210 80% 70%;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(235 90% 70%) 0%, hsl(260 80% 60%) 100%);
-    --gradient-subtle: linear-gradient(135deg, hsl(220 15% 10%) 0%, hsl(220 15% 12%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(235 90% 70% / 0.35) 0%, hsl(260 80% 60% / 0.2) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(240 58% 35% / 0.85) 0%, hsl(210 80% 50% / 0.65) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(240 58% 28% / 0.9) 0%, hsl(240 58% 32% / 0.9) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 80% 70% / 0.25) 0%, hsl(200 85% 65% / 0.2) 100%);
 
     /* Shadows & Effects */
-    --shadow-glass: 0 8px 32px hsl(235 90% 70% / 0.3);
-    --shadow-glow: 0 0 40px hsl(235 90% 70% / 0.5);
-    --shadow-card: 0 4px 20px hsl(235 90% 70% / 0.15);
+    --shadow-glass: 0 8px 32px hsl(210 80% 70% / 0.25);
+    --shadow-glow: 0 0 48px hsl(210 80% 70% / 0.4);
+    --shadow-card: 0 12px 30px hsl(240 58% 10% / 0.35);
+
+    /* Role-specific Colors */
+    --heading: 0 0% 96%;
+    --icon: 0 0% 92%;
   }
 }
 

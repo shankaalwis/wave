@@ -29,6 +29,8 @@ export default {
           DEFAULT: "hsl(var(--foreground))",
           muted: "hsl(var(--foreground-muted))",
         },
+        heading: "hsl(var(--heading))",
+        icon: "hsl(var(--icon))",
         glass: {
           background: "hsl(var(--glass-background))",
           border: "hsl(var(--glass-border))",
