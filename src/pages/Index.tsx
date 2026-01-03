@@ -1,12 +1,11 @@
-import { 
-  Mail, 
-  Phone, 
-  Linkedin, 
-  Instagram, 
-  Twitter, 
-  Facebook, 
-  Youtube, 
-  Github, 
+import {
+  Mail,
+  Phone,
+  Instagram,
+  Twitter,
+  Facebook,
+  Youtube,
+  Github,
   ExternalLink,
   MapPin,
   Clock
@@ -30,11 +29,6 @@ const Index = () => {
       icon: Phone,
       label: "Phone",
       copyValue: "+94 (71) 533-3531",
-    },
-    {
-      href: "https://linkedin.com/shankaalwis",
-      icon: Linkedin,
-      label: "LinkedIn",
     },
     {
       href: "https://instagram.com/shankaalwis",
@@ -73,7 +67,7 @@ const Index = () => {
       {/* Animated background */}
       <div className="hero-gradient fixed inset-0" />
       <ParticleBackground />
-      
+
       {/* Theme toggle */}
       <div className="fixed top-4 right-4 sm:top-6 sm:right-6 z-30">
         <ThemeToggle />
@@ -101,7 +95,7 @@ const Index = () => {
                 <h2 className="text-xl sm:text-2xl font-semibold text-heading mb-6 sm:mb-8 fade-in-up delay-3">
                   Connect with me
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-9 gap-4 sm:gap-6 max-w-4xl w-full mx-auto lg:mx-0">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-6 max-w-4xl w-full mx-auto lg:mx-0">
                   {socialLinks.map((link, index) => (
                     <SocialLink
                       key={link.label}
